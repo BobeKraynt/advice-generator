@@ -2,7 +2,7 @@ const button = document.getElementById('btn');
 const cards = document.getElementsByClassName('advice');
 
 button.addEventListener('click', function myFunction() {
-    let randomNumbers = Array.from({length: 3}, _ => Math.floor(Math.random()*175)+ 1);
+    let randomNumbers = Array.from({length: 3}, _ => Math.floor(Math.random()*224)+ 1);
     let advices = [];
     let slip_id = randomNumbers;
     const urls = [`https://api.adviceslip.com/advice/${slip_id[0]}`, `https://api.adviceslip.com/advice/${slip_id[1]}`, `https://api.adviceslip.com/advice/${slip_id[2]}`];
